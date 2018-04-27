@@ -1,21 +1,17 @@
-def prim():
+def hanyadik():
+    prim=0
+    x=10
+    szam=2
     oszto=2
-    if x==1:
-        return "nem prim"
-    else:
-        for i in range(x):
-            if x%oszto==0 and oszto==x:
-                return "prim"
-            elif x%oszto !=0:
+    while prim==x:
+        for i in range(oszto,0,-1):
+            if szam%oszto==0 and oszto==szam:
+                prim+=1
                 oszto+=1
-            else:
-                return "nem prim"
+            elif oszto!=0:
+                oszto+=1
+                szam+=1
+    return szam
 
+print(hanyadik())
 
-def prim_e(d):
-    sz=0
-    for i in range(d*3):
-        if sz == d:
-            return i
-        elif prim(i)==True:
-            sz+=1
