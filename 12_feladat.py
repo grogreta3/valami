@@ -1,6 +1,6 @@
 def hanyadik():
     prim=0
-    x=10
+    d=10
     szam=2
     oszto=2
     while prim==x:
@@ -12,6 +12,8 @@ def hanyadik():
                 oszto+=1
                 szam+=1
     return szam
+
+
 
 print(hanyadik())
 
