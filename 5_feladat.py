@@ -1,4 +1,5 @@
 def feladat_5():
+    
     sum = 0
     while sum != 100:
         x = int(input("Szam:"))
