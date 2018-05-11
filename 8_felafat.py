@@ -1,9 +1,9 @@
 def Feladat8():
-    a = input('Első szó:')      #Bekéri az első szót
-    b = input('Második szó:')   #Bekéri a másodikat
-    k = ''                      #üres sztring
+    a = input('Első szó:')     
+    b = input('Második szó:')   
+    k = ''                      
     for i in a:
-        for j in b:             #dupla ciklus, ha egyezést talál beilleszti az üres sztring-be
+        for j in b:             
             if i == j:
                 k += j
                 break
