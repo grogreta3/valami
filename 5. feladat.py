@@ -20,4 +20,4 @@ for i in li:
     uj_li.append(i)
 print(uj_li)
 print(lista(uj_li))
-print(li)
+
