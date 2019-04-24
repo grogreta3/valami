@@ -8,7 +8,7 @@ def lista(li):
             idx+=1
             s=li[i]
             print (s)
-    if li[idx+1]>s:
+    if li[idx+2]>s:
         uj_li.append(li[idx+1])
 
     return uj_li,len(uj_li)
