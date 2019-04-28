@@ -11,7 +11,7 @@ def lista(li):
     if li[idx+1]>s:
         uj_li.append(li[idx+1])
 
-    return uj_li,len(uj_li)
+    return uj_li
 
 
 
