@@ -1,23 +1,27 @@
-def lista(li):
-    uj_li=[]
-    i=0
-    while i!=len(li)-1:
-        if li[i]<li[i+1]:
-            uj_li.append(li[i])
-            i+=1
-        if li[i]>li[i+1]:
-            break
-    if li[i]>li[i-1]:
-        uj_li.append(li[i])
+li=input('adj meg egy szam sort vesszovel elvalasztva:')
+li=li.split(",")
+new_li=[]
+idx=0
+for i in range(len(li)-1):
+    if li[i]<li[i+1]:
+        new_li.append(li[i])
+        idx+=1
 
-    return uj_li,len(uj_li)
 
-li=input('adj meg egy listát vesszővel elválasztva:')
-li=li.split(',')
-uj_li=[]
-for i in li:
-    i=int(i)
-    uj_li.append(i)
-print(uj_li)
-print(lista(uj_li))
+if li[-1]>new_li[-1]:
+    new_li.append(li[idx])
+
+print(new_li)
+
+
+
+
+   # elif li[i]>li[i+1] and li[i]>li[0]:
+    #    new_li2=[li[0]]
+        
+   #     if len(new_li)>len(new_li2):
+   #         print(new_li)
+    #    else:
+    #        print(nem_li2)
+
 
