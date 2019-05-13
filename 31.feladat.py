@@ -1,27 +1,18 @@
 #Íef emailolvaso(n):
 
-
-
-
-n=input("adj meg egy email cimet:")
-while n!=0:
-    if "@" or "." not in n:
-        print(False)
-        n=input("adj meg egy email cimet:")
-    if "@" or "." not in n:
+n = input("adj meg egy email cimet:")
+while n!="0":
+    if "@" and "." not in n:
+        print("nem megfelelo az email cim")
+        n = input("adj meg egy email cimet:")
+    elif "@" and "."  in n:
         n=n.split("@")
-        for i in n[0]:
-            if n[0][0].style!=str or n[0][0].style!=int:
-                print(False)
-                n = input("adj meg egy email cimet:")
+        if type(n[0][0])!=str and type(n[0][0])!=int:
+            print("nem betuvel vagy szammal kezdtel")
+            n = input("adj meg egy email cimet:")
     else:
-
-
-
-
-
-
         print(True)
+        n = input("adj meg egy email cimet:")
 
 
 
