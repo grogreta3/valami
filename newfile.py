@@ -2,19 +2,16 @@ def lista(li):
     uj_li=[]
     idx=0
     s=0
-    for i in range(len(li)-1):
-        if li[i]<li[i+1]:
-            uj_li.append(li[i])
-            idx+=1
-            s=li[i]
-            print (s)
-    if li[idx+1]>s:
-        uj_li.append(li[idx+1])
-
+    while idx!=(len(li)-1):
+    	if li[idx]<li[idx+1]:
+    		uj_li.append(li[idx])
+    		s=uj_li[idx]
+    	idx+=1
+    	
+    	if li[idx]>li[idx+1]:
+    		idx+=1
     return uj_li,len(uj_li)
-
-
-
+    		
 
 li=input('adj meg egy listát vesszővel elválasztva:')
 li=li.split(',')
