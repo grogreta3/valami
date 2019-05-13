@@ -9,3 +9,6 @@ while n!="0":
         print("nem jo az email cim")
         n = input("adj meg egy email cimet:")
 
+    else:
+        print(True)
+        n = input("adj meg egy email cimet:")
