@@ -15,6 +15,12 @@ while n!=0:
                 print(False)
                 n = input("adj meg egy email cimet:")
     else:
+
+
+
+
+
+
         print(True)
 
 
