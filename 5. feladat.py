@@ -24,7 +24,6 @@ for i in range(len(li)-1):
         new_li.append(li[i+1])
     else:
         newli2=[li[0]]
-
         if li[i]>newli2[j]:
             newli2.append(li[i])
 
