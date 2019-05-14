@@ -24,10 +24,9 @@ for i in range(len(li)-1):
         new_li.append(li[i+1])
     else:
         newli2=[li[0]]
-        for j in range (len(newli2)-1):
-            j=int(j)
-            if li[i]>newli2[j]:
-                newli2.append(li[i])
+
+        if li[i]>newli2[j]:
+            newli2.append(li[i])
 
         if len(new_li)<len(newli2):
             new_li=newli2
