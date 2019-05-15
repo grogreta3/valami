@@ -19,6 +19,11 @@ while idx!=len(li)-1:
                 new_li.append(li[idx + 1])
                 idx+=1
 
+
+
+
+
+
 if li[-1]>new_li[-1]:
     new_li.append(li[-1])
 
