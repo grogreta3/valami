@@ -1,4 +1,4 @@
-ef lis(li):
+def lis(li):
     n = len(li)
     lis = [1] * n # lista n elemmel egyesekkel
     no = [0] * n # lista ugyan annyi elemmel ahany elem van a listaba kinullazva
