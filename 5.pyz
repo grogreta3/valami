@@ -8,7 +8,7 @@ def lis(li):
 
     for i in range(1, n):
         for j in range(0, i):
-            if li[i] > li[j] and lis[i] < lis[j] + 1:
+            if li[i] > li[j] and lis[i] < lis[j] + 1: #7111, 7721,7332
                 lis[i] = lis[j] + 1
                 no[i] = j # listaba szedem hogy hol voltak nagyobbak a i mint a j k
 #
