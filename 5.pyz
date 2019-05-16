@@ -1,26 +1,39 @@
-def lista(li):
-    uj_li=[]
-    idx=0
-    s=0
-    for i in range(len(li)-1):
-        if li[i]<li[i+1]:
-            uj_li.append(li[i])
-            idx+=1
-            s=li[i]
-            print (s)
-    if li[idx+1]>s:
-        uj_li.append(li[idx+1])
+def lis(li):
+    n = len(li)
+    lis = [1] * n
+    no = [0] * n
 
-    return uj_li
+    for i in range(0, n):
+        no[i] = i
+
+    for i in range(1, n):
+        for j in range(0, i):
+            if li[i] > li[j] and lis[i] < lis[j] + 1:
+                lis[i] = lis[j] + 1
+                no[i] = j
+    print(lis)
+    print(no)
+
+    max = 0
+    idx = 0
+
+    for i in range(n):
+        if max < lis[i]:
+            max = lis[i]
+            idx = i
+
+    new_li = [li[idx]]
+    #print(new_li)
+    while idx != no[idx]:
+        idx = no[idx]
+        new_li.append(li[idx])
+
+    new_li = sorted(new_li)
+    return max, new_li
 
 
 
-
-li=input('adj meg egy listát vesszővel elválasztva:')
-li=li.split(',')
-uj_li=[]
-for i in li:
-    i=int(i)
-    uj_li.append(i)
-print(uj_li)
-print(lista(uj_li))
+li = input("adj meg egy szamsort vesszovel elvalasztva:")
+li=lis.split(',')
+fut = lis(li)
+print(fut)
