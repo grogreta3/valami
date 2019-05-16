@@ -1,18 +1,19 @@
 def lis(li):
     n = len(li)
-    lis = [1] * n
-    no = [0] * n
+    lis = [1] * n # lista n elemmel egyesekkel
+    no = [0] * n # lista ugyan annyi elemmel ahany elem van a listaba kinullazva
 
     for i in range(0, n):
-        no[i] = i
+        no[i] = i # 1- n ig 
 
     for i in range(1, n):
         for j in range(0, i):
             if li[i] > li[j] and lis[i] < lis[j] + 1:
                 lis[i] = lis[j] + 1
-                no[i] = j
-    print(lis)
-    print(no)
+                no[i] = j # listaba szedem hogy hol voltak nagyobbak a i mint a j k
+#
+    print(lis) #112232
+    print(no) #000220
 
     max = 0
     idx = 0
